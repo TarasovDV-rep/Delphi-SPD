@@ -1,0 +1,24 @@
+unit Unit_new_uzel;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TForm_new_uzel = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_new_uzel: TForm_new_uzel;
+
+implementation
+
+{$R *.dfm}
+
+end.

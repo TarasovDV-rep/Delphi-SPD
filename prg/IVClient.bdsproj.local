@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013.01.11 07:18:15.103.pas,C:\Documents and Settings\ivc_tarasovdv\Мои документы\Borland Studio Projects\Unit2.pas=D:\IVClient\prg\Unit_client.pas</Transaction>
+    <Transaction>2013.01.11 07:18:15.103.dfm,C:\Documents and Settings\ivc_tarasovdv\Мои документы\Borland Studio Projects\Unit2.dfm=D:\IVClient\prg\Unit_client.dfm</Transaction>
+    <Transaction>2013.01.11 07:18:24.571.bdsproj,C:\Documents and Settings\ivc_tarasovdv\Мои документы\Borland Studio Projects\Project3.bdsproj=D:\IVClient\prg\IVClient.bdsproj</Transaction>
+    <Transaction>2013.01.14 07:52:12.256.pas,D:\IVClient\prg\Unit1.pas=D:\IVClient\prg\Unit_new_conn.pas</Transaction>
+    <Transaction>2013.01.14 07:52:12.256.dfm,D:\IVClient\prg\Unit1.dfm=D:\IVClient\prg\Unit_new_conn.dfm</Transaction>
+    <Transaction>2013.01.14 08:47:22.932.pas,D:\IVClient\prg\Unit1.pas=D:\IVClient\prg\Unit_dop.pas</Transaction>
+    <Transaction>2013.01.14 11:18:08.218.pas,D:\IVClient\prg\Unit1.pas=D:\IVClient\prg\Unit_new_uzel.pas</Transaction>
+    <Transaction>2013.01.14 11:18:08.218.dfm,D:\IVClient\prg\Unit1.dfm=D:\IVClient\prg\Unit_new_uzel.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
