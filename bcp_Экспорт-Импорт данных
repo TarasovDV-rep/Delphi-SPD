@@ -1,0 +1,31 @@
+В командной строке...
+
+Экспорт(выгрузка):
+bcp work_223purchaseContract_contractItem out "d:\w.dat" -N -T -S "DVBSM-DB-TST01" -d "zakupki"
+
+bcp varx_fullXmlSource out "D:/sqldata/Share/Zakupki/arx_temp/fxml.dat" -N -T -S "open_data" -d "zakupki"
+
+
+"c:\Program Files\7-Zip\7z.exe" a -t7z D:/sqldata/Share/zakupki/arx_temp/files.7z D:/sqldata/Share/zakupki/arx_temp/fxml.dat
+
+bcp varx_fullXmlSource out "D:/sqldata/Share/Zakupki/arx_temp/fxml.dat" -N -T -S "open_data" -d "zakupki"
+
+bcp "select top 10 * from fullXmlSource order by CreateDateTimeRow" queryout "z:/Zakupki/arx_temp/fxml.dat" -N -T -S "open_data" -d "zakupki"
+
+bcp "select top 1000 * from varx_fullXmlSource order by CreateDateTimeRow" queryout "z:/Zakupki/arx_temp/fxml.dat" -N -T -S "open_data" -d "zakupki"
+
+bcp [work_44contractProcedure_executions_execution_quantity-del] out "d:/11aa/work_44contractProcedure_executions_execution_quantity-del.dat" -N -T -S "open_data" -d "zakupki"
+
+
+Импорт(загрузка):
+bcp work_223purchaseContract_contractItem in "d:\w.dat" -N -T -S "open_data" -d "zakupki"
+
+bcp fullXmlSource in "z:/Zakupki/arx_temp/fxml.dat" -N -T -S "DVBSM-DB-TST01" -d "zakupki"
+
+bcp fullXmlSource in "z:/Zakupki/arx_temp/fxml.dat" -E -N -T -S "DVBSM-DB-TST01" -d "zakupki"
+
+
+!!! = Загрузка данных с сохранением исходных идентификаторов(предполагается, что при отборе эти строки были удалены)
+bcp fullXmlSource1 in "z:/ToArxXml/f.dat" -E -N -T -S "open_data" -d "zakupki"
+
+
